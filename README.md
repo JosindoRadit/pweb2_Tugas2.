@@ -1,5 +1,5 @@
 
-# <p align ="center">PWEB 2</p><br>
+
 
 <pre>
 Nama  : Josindo Radit Albaran
@@ -8,8 +8,10 @@ Kelas : TI-2C
 <br>
 
 </pre>
+# <p align ="center">PWEB 2-TUGAS 2</p><br>
 
 # <p align ="center">Task 2</p><br>
+
 # <p align ="center">Web Programming Practicum II Implemented CRUD using PHP OOP</p><br>
 
 <div align="justify">
