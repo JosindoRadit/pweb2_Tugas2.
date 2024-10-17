@@ -1,14 +1,16 @@
 
-# Tugas 2
+# <p align ="center">PWEB 2</p><br>
 
-#### Nama : Josindo Radit Albaran<br>
-#### NIM  : 230302064<br>
-#### Kelas  :TI-2C
+<pre>
+Nama  : Josindo Radit Albaran
+NIM   : 230302064
+Kelas : TI-2C
 <br>
 
-<center><b>Task 2</b></center><br>
-<center><b>Web Programming Practicum II
-Implemented CRUD using PHP OOP</b></center><br>
+</pre>
+
+# <p align ="center">Task 2</p><br>
+# <p align ="center">Web Programming Practicum II Implemented CRUD using PHP OOP</p><br>
 
 <div align="justify">
 A. Introduction
@@ -223,17 +225,17 @@ if(isset($_GET['role'])){
 </html>
 ```
 
-## #Output<br>
+## #Output Index :<br>
 <img src="./img/tampilan awal.PNG">
 
-### #Catatan Role dan Navbar<br>
+### Catatan Role dan Navbar<br>
 Didalam tampilan awal ini terdapat role yang di pegang oleh administator dan dosen(dialam role adminitrator pada tabel mahasiswa, administrator bisa melihat Nama, Nim, Alamat, No_telpon dan pada tabel nilai perbaikan administrator bisa melihat tgl perbaikan, Keterangan, Id mahasiswa sedangkan pada role dosen pada table mahasiswa hanya bisa melihat Nim, Nama, Email, dan pada table nilai perbaikan dosen hanya bisa melihat Keterangan, Id mahasiswa ).
 
 Didalam tampilan awal ini juga terdapat navbar yang terdiri dari administrator dan dosen dan didalam administrator dan dosen terdapat choice/pilihan mahasiswa dan nilai_perbaikan. 
 #### Saya Membuat Role nya sesudah membuat koneksi  dan databasenya.<br>
 
 
-## #2. Membuat DATABASE Mahasiswa, Koneksi, dan Menentukan Role<br>
+## 2. Membuat DATABASE Mahasiswa, Koneksi, dan Menentukan Role<br>
 
 ```php
 
@@ -485,10 +487,10 @@ Dalam class dosen terdapat konsep inheritance(turunan) yaitu pada bagian class d
 
 Code ini mengatur tampilan data mahasiswa berdasarkan role yang diberikan. Dengan parameter role, halaman ini dapat menampilkan informasi yang sesuai untuk pengguna dengan role tertentu (dosen atau admin). Pada potongan code ini juga menerapkan konsep polimorpshm dibagian logika if else.
 
-## Output Data Mahasiswa Admin
+## #Output Data Mahasiswa Admin :
 <img src="./img/datamaha ad.PNG">
 
-## Output Data Mahasiswa Dosen
+## #Output Data Mahasiswa Dosen :
 <img src="./img/datamaha do.PNG">
 
 
@@ -740,9 +742,9 @@ Dalam class dosen terdapat konsep inheritance(turunan) yaitu class dataconect ex
 
 Code ini mengatur tampilan data Nilai Perbaikan berdasarkan role yang diberikan kepada dosen dan admin. Dengan parameter role, halaman ini dapat menampilkan informasi yang sesuai untuk pengguna dengan role tertentu (dosen atau admin). Pada potongan code ini juga menerapkan konsep polimorpshm dibagian logika if else.
 
-## Output Data Nilai Perbaikan Admin
+## Output Data Nilai Perbaikan Admin :
 <img src="./img/nilaiP ad.PNG">
 
-## Output Data Nilai Perbaikan Dosen
+## Output Data Nilai Perbaikan Dosen :
 <img src="./img/nilaiP do.PNG">
 <div>
