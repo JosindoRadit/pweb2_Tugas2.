@@ -228,7 +228,7 @@ if(isset($_GET['role'])){
 ```
 
 ## #Output Index :<br>
-<img src="./img/tampilan awal.PNG">
+<img src="./img/tampilannn.PNG">
 
 ### Catatan Role dan Navbar<br>
 Didalam tampilan awal ini terdapat role yang di pegang oleh administator dan dosen(dialam role adminitrator pada tabel mahasiswa, administrator bisa melihat Nama, Nim, Alamat, No_telpon dan pada tabel nilai perbaikan administrator bisa melihat tgl perbaikan, Keterangan, Id mahasiswa sedangkan pada role dosen pada table mahasiswa hanya bisa melihat Nim, Nama, Email, dan pada table nilai perbaikan dosen hanya bisa melihat Keterangan, Id mahasiswa ).
