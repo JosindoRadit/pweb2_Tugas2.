@@ -6,7 +6,7 @@
 #### Kelas  :TI-2C
 <br>
 
-<center><b>Task 2</b></center>
+<center><b>Task 2</b></center><br>
 <center><b>Web Programming Practicum II
 Implemented CRUD using PHP OOP</b></center><br>
 
@@ -30,19 +30,19 @@ The system supports four distinct user roles:
 <img src="./img/ed soal.PNG"><br>
 
 
-<b>Case Study:</b>
+<b>Case Study:</b><br>
 - NPM 1,2: mahasiswa & nilai
 - NPM 3,4: mahasiswa & nilai_perbaikan
 - NPM 5,6: surat_tugas & permohonan_izin
 - NPM 7,8: penggantian_pengawas_ujian & laporan_kerja_lembur
 - NPM 9,0: izin_ketidakhadiran_pegawai
-<br><br><b>Task:</b>
+<br><br><b>Task:</b><br>
 1. Create an OOP-based View, by retrieving data from the MySQL database
 2. Use the _construct as a link to the database
 3. Apply encapsulation according to the logic of the case study
 4. Create a derived class using the concept of inheritance
 5. Apply polymorphism for at least 2 roles according to the case study
-<br><br><b>Rule:</b>
+<br><br><b>Rule:</b><br>
 1. Individual group assignments
 2. Use the github repository
 3. Submit via Google Classroom
@@ -52,7 +52,7 @@ o Timeliness (20%)<br>
 o Documentation (40%)<br>
 o Originality (40%)
 
-## Table :
+## Table :<br>
 
 <img src="./img/tn.PNG">
 <img src="./img/tm.PNG">
@@ -72,7 +72,7 @@ o Originality (40%)
 <img src="./img/data nilai.PNG"><br>
 
 
-## 1.Membuat Tampilan Awal/Index
+## 1.Membuat Tampilan Awal/Index<br>
 ### #Tamipaln Awal/Index
 
 ```php
@@ -145,7 +145,7 @@ if(isset($_GET['role'])){
 
 ```
 
-### #Menentukan Role
+### #Menentukan Role<br>
 
 ```php
 <?php
@@ -165,7 +165,7 @@ if(isset($_GET['role'])){
 
 
 
- ### # Membuat Navbar
+ ### # Membuat Navbar<br>
 
 ```php
 <!DOCTYPE html>
@@ -223,17 +223,17 @@ if(isset($_GET['role'])){
 </html>
 ```
 
-## #Output
+## #Output<br>
 <img src="./img/tampilan awal.PNG">
 
-### #Catatan Role dan Navbar
+### #Catatan Role dan Navbar<br>
 Didalam tampilan awal ini terdapat role yang di pegang oleh administator dan dosen(dialam role adminitrator pada tabel mahasiswa, administrator bisa melihat Nama, Nim, Alamat, No_telpon dan pada tabel nilai perbaikan administrator bisa melihat tgl perbaikan, Keterangan, Id mahasiswa sedangkan pada role dosen pada table mahasiswa hanya bisa melihat Nim, Nama, Email, dan pada table nilai perbaikan dosen hanya bisa melihat Keterangan, Id mahasiswa ).
 
 Didalam tampilan awal ini juga terdapat navbar yang terdiri dari administrator dan dosen dan didalam administrator dan dosen terdapat choice/pilihan mahasiswa dan nilai_perbaikan. 
-#### Saya Membuat Role nya sesudah membuat koneksi  dan databasenya.
+#### Saya Membuat Role nya sesudah membuat koneksi  dan databasenya.<br>
 
 
-## #2. Membuat DATABASE Mahasiswa, Koneksi, dan Menentukan Role
+## #2. Membuat DATABASE Mahasiswa, Koneksi, dan Menentukan Role<br>
 
 ```php
 
@@ -322,7 +322,7 @@ class admin extends dataconnect {
 ?>
 ```
 
-### #Membuat Koneksi Mahasiswa
+### <br>#Membuat Koneksi Mahasiswa<br>
 
 ```php
 <?php
@@ -342,7 +342,7 @@ class dataconnect {
     }
 }
 ```
-### Catatan Koneksi Mahasiswa
+### <br>Catatan Koneksi Mahasiswa<br>
 Setelah itu membuat sebuah kelas yang dinamakan dataconnect tujuanya untuk menghubungkan ke database PHP myadmin. Di dalam kelas ini, mendefinisikan beberapa properti privat yang menyimpan informasi penting untuk koneksi database, antara lain:
 <br>$servername
 <br>$username
@@ -350,7 +350,7 @@ Setelah itu membuat sebuah kelas yang dinamakan dataconnect tujuanya untuk mengh
 <br>$dbname
 <br>Didalam koneksi ini menggunakan konsep enkapsulasi karena menggunakan privat untuk melindungi properti dan pada function consctruct berfungsi untuk mrnginilialisasi.
 
-### #Membuat DataBase Mahasiswa
+### <br>#Membuat DataBase Mahasiswa<br>
 
 
 
@@ -423,13 +423,13 @@ class admin extends dataconnect {
 ?>
 
 ```
-### Catatan DataBase Mahasiswa
+### <br>Catatan DataBase Mahasiswa<br>
 
 Dalam class dosen terdapat konsep inheritance(turunan) yaitu pada bagian class dataconect extend class dosen dan pada class admin juga terdapat konsep inherintance yaitu admin extend, Dalam code pada class dosen dan class admin juga menggunakan konsep polymorpsm yaitu di  bagian function tblmahasiswa pada class dosen dan function yang sma juga di class admin tapi isinya berbeda menyesuaikan dengan rolenya, dan pada bagian foreach berguna untuk mengambil data dari data base. Kedua class, dosen dan admin, menggunakan koneksi yang disediakan oleh class dataconnect untuk mengambil data dari tabel mahasiswa di database. Class dosen hanya menampilkan informasi dasar mahasiswa, sementara Class admin menampilkan lebih banyak detail. Perbedaan utama antara keduanya adalah jumlah kolom yang ditampilkan. 
 
 
 
-### #Menentukan Role
+### <br>#Menentukan Role<br>
 
 ```php
 <!DOCTYPE html>
@@ -481,7 +481,7 @@ Dalam class dosen terdapat konsep inheritance(turunan) yaitu pada bagian class d
 </body>
 </html>
 ```
-### Catatan Menentukan Role 
+### <br>Catatan Menentukan Role<br> 
 
 Code ini mengatur tampilan data mahasiswa berdasarkan role yang diberikan. Dengan parameter role, halaman ini dapat menampilkan informasi yang sesuai untuk pengguna dengan role tertentu (dosen atau admin). Pada potongan code ini juga menerapkan konsep polimorpshm dibagian logika if else.
 
@@ -492,7 +492,7 @@ Code ini mengatur tampilan data mahasiswa berdasarkan role yang diberikan. Denga
 <img src="./img/datamaha do.PNG">
 
 
-## 3. Membuat DATABASE Nilai_Perbaikan, Koneksi, dan Menentukan Role
+## <br>3. Membuat DATABASE Nilai_Perbaikan, Koneksi, dan Menentukan Role<br>
 
 ```php
 <?php
@@ -578,7 +578,7 @@ class admin extends dataconnect {
 ```
 
 
-### #Membuat Koneksi Nilai Perbaikan
+### <br>#Membuat Koneksi Nilai Perbaikan<br>
 
 ```php
 <?php
@@ -598,7 +598,7 @@ class dataconnect {
     }
 }
 ```
-### Catatan Koneksi Nilai Perbaikan
+### <br>Catatan Koneksi Nilai Perbaikan<br>
 
 Setelah itu membuat sebuah kelas yang dinamakan dataconnect tujuanya untuk menghubungkan ke database PHP myadmin. Di dalam kelas ini, mendefinisikan beberapa properti privat yang menyimpan informasi penting untuk koneksi database, antara lain:
 <br>$servername
@@ -608,7 +608,7 @@ Setelah itu membuat sebuah kelas yang dinamakan dataconnect tujuanya untuk mengh
 <br>Didalam koneksi ini menggunakan konsep enkapsulasi karena menggunakan privat untuk melindungi properti sama seperti database mahasiswa.
 
 
-### #Membuat DataBase Nilai Perbaikan
+### <br>#Membuat DataBase Nilai Perbaikan<br>
 
 
 
@@ -678,13 +678,13 @@ class admin extends dataconnect {
 ?>
 
 ```
-### #Catatan DataBase Nilai_Perbaikan
+### <br>#Catatan DataBase Nilai_Perbaikan<br>
 
 Dalam class dosen terdapat konsep inheritance(turunan) yaitu class dataconect extend class dosen dan pada class admin juga terdapat konsep inherintance yaitu admin extend, Dalam codingan pada class dosen dan class admin juga menggunakan konsep polymorpsm yaitu di function tblniali_perbaikan pada class dosen dan function yang sama juga di class admin tapi isinya berbeda menyesuaikan dengan rolenya dan pada bagian foreach berguna untuk mengambil data dari data base. . Kedua class, dosen dan admin, menggunakan koneksi yang disediakan oleh class dataconnect untuk mengambil data dari tabel mahasiswa di database. Kelas dosen hanya menampilkan informasi dasar mahasiswa, sementara kelas admin menampilkan lebih banyak detail. Perbedaan utama antara keduanya adalah jumlah kolom yang ditampilkan.
 
 
 
-### #Menentukan Role
+### <br>#Menentukan Role<br>
 
 ```php
 <!DOCTYPE html>
@@ -736,7 +736,7 @@ Dalam class dosen terdapat konsep inheritance(turunan) yaitu class dataconect ex
 </body>
 </html>
 ```
-### Catatan Menentukan Role 
+### <br>Catatan Menentukan Role<br> 
 
 Code ini mengatur tampilan data Nilai Perbaikan berdasarkan role yang diberikan kepada dosen dan admin. Dengan parameter role, halaman ini dapat menampilkan informasi yang sesuai untuk pengguna dengan role tertentu (dosen atau admin). Pada potongan code ini juga menerapkan konsep polimorpshm dibagian logika if else.
 
